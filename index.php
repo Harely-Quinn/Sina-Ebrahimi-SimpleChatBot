@@ -41,7 +41,6 @@ $left = $message->left_chat_member;
 $soat = date("H:i:s", strtotime("2 hour"));
 $sana = date("d.m.y", strtotime("2 hour"));
 
-$usernamebot = "";
 $message = $update->message;
 $message_text = $update ->message->text;
 $from_id = $message->from->id;
@@ -109,20 +108,15 @@ $re = $update->message->reply_to_message;
 $from_id = $message->from->id;
 $is_bot = $message->new_chat_member->is_bot;
 $time = strtotime("+5 minutes");
-$us = apiRequest('getChatMembersCount',[
-'chat_id'=>$chat_id,
-]);
+
 $count = $us->result;
 $day = date('d-M Y',strtotime('0 hour'));
 $clock = date('H:i', strtotime('0 hour'));
 $new_time = date("Y-m-d H:i:s", strtotime('+0 hours'));
-$channel = "";
+
 $random_msg_top = array("Hello 👋","Thanks for using me 💛");
 $Random = $random_msg_top[array_rand($random_msg_top,1)];
-$getstatus = apiRequest('getChatMember', [
-'chat_id' => $chat_id,
-'user_id' => $user_id,
-]);
+
 $caption = $message->caption;
 $document = $message->document; 
 $animation = $message->animation;
