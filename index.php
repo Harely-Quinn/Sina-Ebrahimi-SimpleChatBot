@@ -28,6 +28,6 @@ if($text == '/start'){
             [['text' => 'English🇬🇧' , 'callback_data' => 'lang-en']],
             [['text' => 'Persian🇮🇷' , 'callback_data' => 'lang-fa']]
         ]]);
-        $telegram->sendMessageLite($chat_id, $text= 'Hello');]
+        $telegram->sendMessageLite($chat_id, $text= 'Hello');}
     
 ?>
