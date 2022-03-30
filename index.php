@@ -28,7 +28,7 @@ if($text == '/start'){
             [['text' => 'English🇬🇧' , 'callback_data' => 'lang-en']],
             [['text' => 'Persian🇮🇷' , 'callback_data' => 'lang-fa']]
         ]]);
-        $telegram->sendMessage($chat_id , $text = "ok" $lang_btn );
+        $telegram->sendMessage($chat_id , $text = "ok", $lang_btn );
     }
 
 ?>
